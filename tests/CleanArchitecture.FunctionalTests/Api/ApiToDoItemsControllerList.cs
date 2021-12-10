@@ -19,7 +19,7 @@ namespace CleanArchitecture.FunctionalTests.Api
         }
 
         [Fact]
-        public async Task ReturnsTwoItems()
+        public async Task ReturnsThreeItems()
         {
             var response = await _client.GetAsync("/api/todoitems");
             response.EnsureSuccessStatusCode();
